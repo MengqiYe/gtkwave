@@ -600,7 +600,8 @@ int hide_sst; /* from main.c 239 */
 int sst_expanded; /* from main.c 240 */
 #if GTK_CHECK_VERSION(3,0,0)
 #ifdef GDK_WINDOWING_X11
-Window socket_xid; /* from main.c 241 */
+//Window socket_xid; /* from main.c 241 */
+unsigned long socket_xid; /* for windows compiles */
 #else
 unsigned long socket_xid; /* for windows compiles */
 #endif
